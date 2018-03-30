@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEATHER REPORT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="weather.js"></script>
+   <!-- Compiled and minified CSS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+    <link href="favicon.ico" rel="icon">
+     <style>
+         body{
+             background-image: linear-gradient(to top, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%, #b7ddb7 75%, #fef381 100%);
+             background-attachment: fixed;
+             background-size: cover;
+             background-repeat: no-repeat;
+         }
+    </style>      
+</head>
+<body>
+<div class="container center " >
+    <div>
+        <h1 class=" pink-text">Weather Report</h1>
+        <h5 class=" red-text">Enter Your Location to Get Weather</h5>
+        <br><br>
+        <div class="input-field col s12 m6 l6" >
+               
+            <input type="text" id="place" >
+            <label for="place " class="white-text">Location</label>
+        </div>
+        <div>
+            <button type="submit" id="btn" class="btn">Get Weather Status</button>
+            
+        </div>
+    </div>
+    
+    <div id="weather" class=" black-text"></div>
+    <div id="up" class=" deep-purple-text">    </div>
+</div>
+</body>
+</html>
